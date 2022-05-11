@@ -1,0 +1,175 @@
+body {
+  box-sizing: border-box;
+  background: var(--secandary-color);
+}
+.container .row .contact i.fa-bars {
+  padding: 5px;
+  font-size: 25px;
+  color: #fff;
+}
+.container .row .contact i.fa-bars:hover {
+  cursor: pointer;
+}
+
+.contact .container .content {
+  background: #fff;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+.contact .container .head {
+  text-align: center;
+  margin-bottom: 20px;
+  padding-top: 50px;
+}
+.contact .container .head span {
+  text-align: center;
+  color: #fff;
+  background: var(--main-color);
+  padding: 15px 20px;
+  border-radius: 20px;
+  font-family: var(--heading-font);
+  font-size: 40px;
+  font-weight: 600;
+}
+.contact .container .row {
+  padding: 50px 0px;
+}
+.contact .container .content .container row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact .container .content .container form label {
+  font-family: var(--main-font);
+  font-size: 20px;
+  background: var(--main-color);
+  color: #fff;
+  padding: 5px 10px;
+  margin: 10px 0;
+}
+.contact .container .content .container form input,
+.contact .container .content .container form textarea {
+  padding: 5px 10px;
+  width: 500px;
+  margin-left: 10px;
+  border: none;
+  outline: none;
+  border-bottom: 3px solid var(--secandary-color);
+  border-left: 3px solid var(--secandary-color);
+  border-radius: 10px;
+  font-family: var(--main-font);
+}
+.contact .container .content .container .links-contact {
+  padding: 5px 20px;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
+.contact .container .content .container .links-contact,
+.contact .container .content .container .links-contact a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.contact .container .content .container .links-contact a {
+  margin: 10px;
+  color: var(--main-color);
+}
+.contact .container .content .container .links-contact a i {
+  transition: 0.5s;
+}
+
+.contact .container .content .container form .send button {
+  margin-top: 10px;
+  padding: 5px 50px;
+  border-radius: 10px;
+  border: none;
+  background: var(--main-color);
+  color: #fff;
+  font-family: var(--main-font);
+  font-size: 20px;
+  font-weight: bold;
+  transition: 0.5s;
+}
+.contact .container .content .container form .send button:hover {
+  background: var(--secandary-color);
+}
+
+.contact .container .content .container .links-contact a:hover i.insta {
+  color: var(--secandary-color);
+}
+.contact .container .content .container .links-contact a:hover i.facebook,
+.contact .container .content .container .links-contact a:hover i.linkedin,
+.contact .container .content .container .links-contact a:hover i.twitter {
+  color: #1d9bf0;
+}
+.contact .container .content .container .links-contact a:hover i.insta {
+  color: var(--secandary-color);
+}
+.contact .container .content .container .links-contact a:hover i.behance,
+.contact .container .content .container .links-contact a:hover i.git {
+  color: black;
+}
+
+@media (max-width: 1000px) {
+  .contact .container .content .container .row {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact .container .content .container .links-contact,
+  .contact .container .content .container .links-contact a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+}
+@media (max-width: 770px) {
+  .contact .container .content .container .links-contact,
+  .contact .container .content .container .links-contact a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .contact .container .content .container form label {
+    font-size: 20px;
+    color: #fff;
+    margin: 10px 0;
+  }
+  .contact .container .content .container form input,
+  .contact .container .content .container form textarea {
+    padding: 5px 10px;
+    width: 300px;
+    margin-left: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid var(--secandary-color);
+    border-left: 3px solid var(--secandary-color);
+    border-radius: 10px;
+    font-family: var(--main-font);
+  }
+}
+
+@media (max-width: 500px) {
+  .contact .container .head span {
+    font-size: 25px;
+  }
+
+  .contact .container .content .container form label {
+    font-size: 19px;
+  }
+  .contact .container .content .container form input,
+  .contact .container .content .container form textarea {
+    width: 250px;
+    margin: 5px;
+  }
+  .contact .container .content .container .links-contact a {
+    margin: 5px;
+  }
+}

@@ -1,0 +1,115 @@
+body {
+  box-sizing: border-box;
+}
+.container .row .contact i.fa-bars {
+  padding: 5px;
+  font-size: 25px;
+  color: #fff;
+}
+.container .row .contact i.fa-bars:hover {
+  cursor: pointer;
+}
+
+.resume {
+  padding: 50px 0;
+  background: var(--main-color);
+}
+.resume .container .content {
+  background: #fff;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+.resume .container .head {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.resume .container .head span {
+  text-align: center;
+  color: #fff;
+  background: var(--secandary-color);
+  padding: 15px 20px;
+  border-radius: 20px;
+  font-family: var(--heading-font);
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 5px;
+}
+.resume .container .content .container {
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.resume .container .content .row {
+  margin: 0;
+}
+.resume .container .content .row .card {
+  margin: 10px;
+  margin-top: 20px;
+  font-family: var(--main-font);
+}
+
+.resume .container .content .row .education .title h2,
+.resume .container .content .row .courses .title h2 {
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-family: var(--main-font);
+  background: var(--secandary-color);
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.resume .container .content .row .education .content .card,
+.resume .container .content .row .courses .content .card {
+  border: none;
+  border-left: solid var(--secandary-color) 3px;
+  padding: 0 20px;
+  margin: 50px 10px;
+}
+
+.resume .container .content .row .education .content .card .card-title p,
+.resume .container .content .row .courses .content .card .card-title p,
+.resume .container .content .row .education .content .card .card-end p,
+.resume .container .content .row .courses .content .card .card-end p {
+  font-size: 20px;
+  background: var(--main-color);
+  color: #fff;
+  display: inline;
+  padding: 5px 10px;
+}
+
+.resume .container .content .row .education .content .card .card-title h2,
+.resume .container .content .row .courses .content .card .card-title h2 {
+  margin-top: 20px;
+  font-family: var(--main-font);
+  font-size: 25px;
+  font-weight: bold;
+}
+.resume .container .content .row .education .content .card .card-body h2,
+.resume .container .content .row .courses .content .card .card-body h2 {
+  margin-top: 20px;
+  font-family: var(--main-font);
+  font-size: 18px;
+  color: var(--main-color);
+  margin: 0;
+}
+.resume .container .content .row .education .content .card .card-body p,
+.resume .container .content .row .courses .content .card .card-body p {
+  font-family: var(--main-font);
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.resume .container .content .row .education .content .card .card-end p,
+.resume .container .content .row .courses .content .card .card-end p {
+  margin-bottom: 0;
+}
+
+@media (max-width: 990px) {
+  .resume .container .content .row .courses {
+    margin-top: 70px;
+  }
+}

@@ -1,0 +1,65 @@
+body {
+  box-sizing: border-box;
+}
+.container .row .contact i.fa-bars {
+  padding: 5px;
+  font-size: 25px;
+  color: #fff;
+}
+.container .row .contact i.fa-bars:hover {
+  cursor: pointer;
+}
+
+.projects {
+  padding: 50px 0;
+  background: var(--main-color);
+}
+.projects .container .content {
+  background: #fff;
+  border-radius: 20px;
+}
+
+.projects .container .head {
+  text-align: center;
+}
+.projects .container .head span {
+  font-family: var(--heading-font);
+  letter-spacing: 5px;
+  background-color: var(--secandary-color);
+  font-size: 40px;
+  font-weight: 600;
+  color: #fff;
+  padding: 15px 20px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px var(--main-color);
+}
+
+.projects .container .content .row .card {
+  border: solid 5px var(--secandary-color);
+  border-radius: 20px;
+  transition: 0.5s;
+}
+.projects .container .content .row .card:hover {
+  box-shadow: 5px 5px 10px var(--secandary-color);
+  border: solid 5px #fff;
+}
+.projects .container .content .row .card a img.card-img-top {
+  border-radius: 20px 20px 0 0;
+}
+.projects .container .content .row .card .card-body .card-title {
+  color: var(--main-color);
+  font-size: 20px;
+  font-weight: bold;
+}
+.projects .container .content .row .card .card-body .card-title span {
+  color: var(--secandary-color);
+}
+
+@media (max-width: 480px) {
+  .projects .container .head span {
+    font-size: 25px;
+  }
+  .projects .container .content .row .card .card-body .card-title {
+    font-size: 16px;
+  }
+}

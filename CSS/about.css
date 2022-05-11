@@ -1,0 +1,219 @@
+body {
+  box-sizing: border-box;
+}
+
+.about-me {
+  padding: 50px 0;
+  background: var(--secandary-color);
+}
+
+.container .row {
+  padding: 20px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container .row .contact i.fa-bars {
+  padding: 5px;
+  font-size: 25px;
+  color: #fff;
+}
+.container .row .contact i.fa-bars:hover {
+  cursor: pointer;
+}
+
+.about-me .container .content,
+.about-me .container .personal-info,
+.about-me .container .skills {
+  background: #fff;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+.about-me .container .head {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.about-me .container .head span {
+  text-align: center;
+  color: #fff;
+  background: var(--main-color);
+  padding: 15px 20px;
+  border-radius: 20px;
+  font-family: var(--heading-font);
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.about-me .container .content .container {
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-me .container .content .container .paragraph {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px 0;
+  font-family: var(--main-font);
+}
+.about-me .container .content .container .paragraph p,
+.about-me .container .content .container .paragraph span {
+  font-size: 25px;
+  color: black;
+  font-weight: 300;
+}
+.about-me .container .content .container .paragraph span {
+  padding: 10px 0;
+  font-weight: bold;
+}
+.about-me .container .content .container .paragraph span span {
+  font-size: 30px;
+  background: var(--secandary-color);
+  color: white;
+  font-weight: 600;
+  padding: 2px 5px;
+}
+.about-me .container .content .row {
+  margin: 5px;
+}
+
+.about-me .container .content .row img {
+  border-radius: 60%;
+}
+.about-me .container .content .row h2 {
+  text-align: center;
+  padding: 10px 0;
+  color: var(--secandary-color);
+  font-weight: bold;
+  font-family: "Press Start 2P", cursive;
+  font-size: 40px;
+}
+
+.about-me .container .personal-info .container span.personal,
+.about-me .container .skills .container span.skill {
+  text-align: center;
+  color: #fff;
+  background: var(--secandary-color);
+  padding: 5px 20px;
+  border-radius: 20px;
+}
+
+.about-me .container .personal-info .container span.personal,
+.about-me .container .skills .container span.skill {
+  font-family: var(--main-font);
+  font-size: 30px;
+  font-weight: 600;
+  box-shadow: 5px 5px 10px var(--main-color);
+}
+
+.about-me .container .personal-info .container .row div {
+  padding: 10px 20px;
+  margin: 10px 0;
+  background-color: var(--main-color);
+  border-bottom: var(--secandary-color) solid 5px;
+}
+.about-me .container .personal-info .container .row div span:first-child {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.about-me .container .personal-info .container .row div span:nth-child(2) {
+  font-size: 20px;
+  letter-spacing: 3px;
+  color: #fff;
+}
+
+.about-me .container .personal-info .container div button {
+  border: none;
+  background-color: var(--main-color);
+  padding: 8px 15px;
+}
+.about-me .container .personal-info .container div button a {
+  text-decoration: none;
+  color: #fff;
+}
+@media (max-width: 790px) {
+  .about-me .container .head span {
+    font-size: 30px;
+  }
+}
+@media (max-width: 500px) {
+  .mynavbar .container .row .logo h2 {
+    font-size: 25px;
+  }
+  .about-me .container .head span {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .about-me .container .content .container {
+    padding: 0;
+  }
+  .personal-info {
+    padding: 50px 0;
+  }
+}
+
+/* Skills Section */
+
+.about-me .container .skills .row .card {
+  border: none;
+  border-bottom: var(--secandary-color) 5px solid;
+  background: var(--main-color);
+  margin: 15px;
+  transition: 1s;
+  border-radius: 20px;
+}
+.about-me .container .skills .row .card span {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+.about-me .container .skills .row .card:hover span {
+  color: var(--main-color);
+}
+.about-me .container .skills .row .card:hover {
+  background-color: white;
+  border-bottom: var(--main-color) 5px solid;
+}
+.about-me .container .skills .row .card i {
+  color: #fff;
+}
+.about-me .container .skills .row .card:hover {
+  cursor: pointer;
+  transition: 0.5s;
+}
+.about-me .container .skills .row .card:hover i.html {
+  color: rgb(232, 117, 45);
+}
+.about-me .container .skills .row .card:hover i.css,
+.about-me .container .skills .row .card:hover i.react {
+  color: rgb(70, 153, 243);
+}
+.about-me .container .skills .row .card:hover i.js {
+  color: rgb(238, 238, 11);
+}
+.about-me .container .skills .row .card:hover i.bootstrap {
+  color: purple;
+}
+.about-me .container .skills .row .card:hover i.git,
+.about-me .container .skills .row .card:hover i.java {
+  color: var(--secandary-color);
+}
+.about-me .container .skills .row .card img.C {
+  color: white;
+}
+
+@media (max-width: 770px) {
+  .about-me .container .skills .row .card {
+    margin: 15px 0;
+  }
+}
