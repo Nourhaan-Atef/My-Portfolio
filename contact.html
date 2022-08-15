@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
+    <!-- logo Font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Headings of pages Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Other Section Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Bootstrap Files CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Headings of pages Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Animate Library Files -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../CSS/main.css" />
+    <link rel="stylesheet" href="../CSS/all.min.css" />
+    <link rel="stylesheet" href="../CSS/contact.css" />
+    <link
+      rel="icon"
+      type="image/gif/png"
+      href="../images/logo-s-circle.png"
+      class="title"
+    />
+
+    <!-- EmailJS Scripts -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("E16WlGVvX9zM5kxLe");
+      })();
+    </script>
+    <title>Contact Me</title>
+  </head>
+  <body>
+    <!--Start of Resume Page (Resume)-->
+    <div class="nav-content">
+      <section id="close" onclick="closeFunc()">
+        <i class="fa fa-window-close" aria-hidden="true"></i>
+      </section>
+      <section><a href="../index.html">Home</a></section>
+      <section><a href="../Components/about.html">About Me</a></section>
+      <section><a href="../Components/resume.html"> Resume</a></section>
+      <section><a href="../Components/contact.html">Contact Me</a></section>
+      <section><a href="../Components/projects.html"> Projects</a></section>
+      <section class="links">
+        <a
+          href="https://www.facebook.com/nony.atef.77"
+          class="text-decoration-none"
+          target="_blank"
+        >
+          <i class="fa-brands fa-facebook facebook"> </i
+        ></a>
+        <a
+          href="https://github.com/Nourhaan-Atef"
+          class="text-decoration-none"
+          target="_blank"
+          ><i class="fa-brands fa-github git"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/nourhan-atef-54630b1b1/"
+          class="text-decoration-none"
+          target="_blank"
+        >
+          <i class="fa-brands fa-linkedin linkedin"></i>
+        </a>
+
+        <a
+          href="https://www.behance.net/noura23"
+          class="text-decoration-none"
+          target="_blank"
+        >
+          <i class="fa-brands fa-behance-square behance"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/nourhanatef214/"
+          class="text-decoration-none"
+          target="_blank"
+          ><i class="fa-brands fa-instagram-square insta"></i
+        ></a>
+        <a
+          href="https://twitter.com/atefnoury"
+          class="text-decoration-none"
+          target="_blank"
+        >
+          <i class="fa-brands fa-twitter-square twitter"></i>
+        </a>
+      </section>
+    </div>
+    <div class="mynavbar">
+      <div class="container">
+        <div class="row">
+          <div class="logo">
+            <a href="../index.html" class="text-decoration-none"
+              ><h2>NOURY</h2></a
+            >
+          </div>
+          <div class="contact flex-center">
+            <i class="fa-solid fa-bars" id="bars" onclick="shownFunc()"> </i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact" id="contact">
+      <div
+        class="container"
+        data-aos="zoom-out"
+        data-aos-duration="1000"
+        data-aos-delay="10"
+      >
+        <section class="head animate__animated animate__rubberBand">
+          <span> Contact Me </span>
+        </section>
+        <section class="content">
+          <div class="container">
+            <div class="row">
+              <form
+                id="Email_Form"
+                class="d-flex flex-column align-items-center justify-content-center"
+              >
+                <div class="name flex-center flex-column">
+                  <label for="name"> WHAT IS YOUR NAME </label>
+                  <input
+                    id="name"
+                    type="text"
+                    placeholder="Please Enter Your Name ..........."
+                  />
+                </div>
+                <div class="email flex-center flex-column">
+                  <label for="email"> YOUR EMAIL ADDRRESS </label>
+                  <input
+                    id="address"
+                    type="email"
+                    placeholder="Please Enter Your Email ............."
+                  />
+                </div>
+                <div class="about-content flex-center flex-column">
+                  <label for="about-content"> How can I Help you?: </label>
+                  <textarea
+                    name="about-content"
+                    id="about-content"
+                    cols="50"
+                    rows="10"
+                    placeholder="Please Enter Your Subject That You Want To Talk ............"
+                  ></textarea>
+                </div>
+                <div class="send flex-center flex-column">
+                  <button onclick="sendEmail()">SEND</button>
+                </div>
+              </form>
+              <div class="links-contact">
+                <a
+                  href="https://www.facebook.com/nony.atef.77"
+                  class="text-decoration-none"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-facebook fa-3x facebook"> </i
+                ></a>
+                <a
+                  href="https://github.com/Nourhaan-Atef"
+                  class="text-decoration-none"
+                  target="_blank"
+                  ><i class="fa-brands fa-github fa-3x git"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/nourhan-atef-54630b1b1/"
+                  class="text-decoration-none"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-linkedin fa-3x linkedin"></i>
+                </a>
+
+                <a
+                  href="https://www.behance.net/noura23"
+                  class="text-decoration-none"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-behance-square fa-3x behance"></i
+                ></a>
+                <a
+                  href="https://www.instagram.com/nourhanatef214/"
+                  class="text-decoration-none"
+                  target="_blank"
+                  ><i class="fa-brands fa-instagram-square fa-3x insta"></i
+                ></a>
+                <a
+                  href="https://twitter.com/atefnoury"
+                  class="text-decoration-none"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-twitter-square fa-3x twitter"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!--End of Resume Page (Resume)-->
+
+    <!-- JS Files -->
+    <!-- AOS Animation Plugin Script -->
+    <script>
+      AOS.init();
+    </script>
+
+    <script src="../main.js"></script>
+  </body>
+</html>
