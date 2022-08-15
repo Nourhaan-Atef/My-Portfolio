@@ -68,3 +68,21 @@ function shownFunc() {
   document.querySelector(".nav-content").style.display = "flex";
   document.querySelector("#bars").style.display = "none";
 }
+
+// Email Function
+function sendEmail(params) {
+  var tempParams = {
+    from_name: document.getElementById("name").value,
+    to_name: document.getElementById("address").value,
+    message: document.getElementById("about-content").value,
+  };
+  emailjs
+    .send("service_eiak4e7", "template_nlaurfr", tempParams)
+    .then(function (res) {
+      console.log("success", res.status);
+    });
+}
+
+$("#Email_Form").submit(function (e) {
+  e.preventDefault();
+});
