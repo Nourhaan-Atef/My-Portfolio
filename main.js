@@ -121,18 +121,4 @@ $("#Email_Form").submit(function (e) {
   e.preventDefault();
 });
 
-// function sendEmail(params) {
-//   let name = document.getElementById("name").value;
-//   let email = document.getElementById("address").value;
-//   let content = document.getElementById("about-content").value;
-//   var tempParams = {
-//     from_name: name,
-//     to_name: email,
-//     message: content,
-//   };
-//   emailjs
-//     .send("service_eiak4e7", "template_nlaurfr", tempParams)
-//     .then(function (res) {
-//       console.log("success", res.status);
-//     });
-// }
+
