@@ -70,19 +70,69 @@ function shownFunc() {
 }
 
 // Email Function
-function sendEmail(params) {
-  var tempParams = {
-    from_name: document.getElementById("name").value,
-    to_name: document.getElementById("address").value,
-    message: document.getElementById("about-content").value,
-  };
-  emailjs
-    .send("service_eiak4e7", "template_nlaurfr", tempParams)
-    .then(function (res) {
-      console.log("success", res.status);
-    });
+const Name = document.getElementById("name");
+const email = document.getElementById("address");
+const content = document.getElementById("about-content");
+
+function validateForm() {
+  let errorFlag = false;
+
+  if (Name.value.length < 1) {
+    errorFlag = true;
+  }
+
+  if (!emailIsValid(email.value)) {
+    errorFlag = true;
+  }
+
+  if (content.value.length < 1) {
+    errorFlag = true;
+  }
+  if (errorFlag == false) {
+    send();
+    alert("Successfully Send");
+  } else {
+    alert("Failed");
+  }
+  clearMessages();
+}
+//Clear error / success messages
+function clearMessages() {
+  Name.value = "";
+  email.value = "";
+  content.value = "";
+}
+//Check if email is valid
+function emailIsValid(email) {
+  let pattern = /\S+@\S+\.\S+/;
+  return pattern.test(email);
+}
+// Sending Mails
+
+function send() {
+  emailjs.send("service_eiak4e7", "template_nlaurfr", {
+    from_name: Name.value,
+    to_name: email.value,
+    message: content.value,
+  });
 }
 
 $("#Email_Form").submit(function (e) {
   e.preventDefault();
 });
+
+// function sendEmail(params) {
+//   let name = document.getElementById("name").value;
+//   let email = document.getElementById("address").value;
+//   let content = document.getElementById("about-content").value;
+//   var tempParams = {
+//     from_name: name,
+//     to_name: email,
+//     message: content,
+//   };
+//   emailjs
+//     .send("service_eiak4e7", "template_nlaurfr", tempParams)
+//     .then(function (res) {
+//       console.log("success", res.status);
+//     });
+// }
